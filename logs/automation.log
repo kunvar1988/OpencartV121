@@ -1,36 +1,50 @@
-2025-03-26 00:26:12 DEBUG TestNG:82 -
+2025-03-27 00:09:51 DEBUG TestNG:82 -
 			suiteXmlPath: "C:\Users\Kunvar\eclipse-workspace\OpencartV121\master.xml"
-2025-03-26 00:26:21 INFO  TC001_AccountRegistrationTest:15 -
+2025-03-27 00:09:52 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\Kunvar\eclipse-workspace\OpencartV121\master.xml
+
+2025-03-27 00:10:29 DEBUG TestNG:82 -
+			suiteXmlPath: "C:\Users\Kunvar\eclipse-workspace\OpencartV121\master.xml"
+2025-03-27 00:10:29 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\Kunvar\eclipse-workspace\OpencartV121\master.xml
+
+2025-03-27 00:10:39 INFO  TC001_AccountRegistrationTest:15 -
 			******Starting TC001_AccountRegistrationTest******
-2025-03-26 00:26:21 INFO  TC001_AccountRegistrationTest:22 -
+2025-03-27 00:10:39 INFO  TC001_AccountRegistrationTest:22 -
 			Clicked on MyAccount Link
-2025-03-26 00:26:22 INFO  TC001_AccountRegistrationTest:24 -
+2025-03-27 00:10:40 INFO  TC001_AccountRegistrationTest:24 -
 			Clicked on Register Link
-2025-03-26 00:26:22 INFO  TC001_AccountRegistrationTest:26 -
+2025-03-27 00:10:40 INFO  TC001_AccountRegistrationTest:26 -
 			Providing Customer details...
-2025-03-26 00:26:24 INFO  TC001_AccountRegistrationTest:42 -
+2025-03-27 00:10:42 INFO  TC001_AccountRegistrationTest:42 -
 			Validating expected message...
-2025-03-26 00:26:24 INFO  TC001_AccountRegistrationTest:63 -
+2025-03-27 00:10:42 INFO  TC001_AccountRegistrationTest:63 -
 			******Finished TC001_AccountRegistrationTest******
-2025-03-26 00:26:28 INFO  TC002_LoginTest:15 -
+2025-03-27 00:10:47 INFO  TC002_LoginTest:15 -
 			******Starting TC002_LoginTest******
-2025-03-26 00:26:31 INFO  TC002_LoginTest:41 -
+2025-03-27 00:10:49 INFO  TC002_LoginTest:41 -
 			******Finished TC002_LoginTest******
-2025-03-26 00:43:37 DEBUG TestNG:82 -
+2025-03-27 00:11:50 DEBUG TestNG:82 -
 			suiteXmlPath: "C:\Users\Kunvar\eclipse-workspace\OpencartV121\master.xml"
-2025-03-26 00:43:45 INFO  TC001_AccountRegistrationTest:15 -
+2025-03-27 00:11:51 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\Kunvar\eclipse-workspace\OpencartV121\master.xml
+
+2025-03-27 00:11:56 INFO  TC001_AccountRegistrationTest:15 -
 			******Starting TC001_AccountRegistrationTest******
-2025-03-26 00:43:45 INFO  TC001_AccountRegistrationTest:22 -
+2025-03-27 00:11:57 INFO  TC001_AccountRegistrationTest:22 -
 			Clicked on MyAccount Link
-2025-03-26 00:43:46 INFO  TC001_AccountRegistrationTest:24 -
+2025-03-27 00:11:57 INFO  TC001_AccountRegistrationTest:24 -
 			Clicked on Register Link
-2025-03-26 00:43:46 INFO  TC001_AccountRegistrationTest:26 -
+2025-03-27 00:11:57 INFO  TC001_AccountRegistrationTest:26 -
 			Providing Customer details...
-2025-03-26 00:43:48 INFO  TC001_AccountRegistrationTest:42 -
+2025-03-27 00:12:00 INFO  TC001_AccountRegistrationTest:42 -
 			Validating expected message...
-2025-03-26 00:43:48 INFO  TC001_AccountRegistrationTest:63 -
+2025-03-27 00:12:00 INFO  TC001_AccountRegistrationTest:63 -
 			******Finished TC001_AccountRegistrationTest******
-2025-03-26 00:43:52 INFO  TC002_LoginTest:15 -
+2025-03-27 00:12:05 INFO  TC002_LoginTest:15 -
 			******Starting TC002_LoginTest******
-2025-03-26 00:43:54 INFO  TC002_LoginTest:41 -
+2025-03-27 00:12:07 INFO  TC002_LoginTest:41 -
 			******Finished TC002_LoginTest******
