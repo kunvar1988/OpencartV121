@@ -21,7 +21,7 @@ public class MyAccountPage extends BasePage
 
 
 	// Action Methods
-	public boolean isMyAccountExists()
+	public boolean isMyAccountPageExists()
 	{
 		try
 		{

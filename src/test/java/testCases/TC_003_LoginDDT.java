@@ -8,7 +8,7 @@ import pageObjects.MyAccountPage;
 import testBase.BaseClass;
 import utilities.DataProviders;
 
-public class TC003_LoginDDT extends BaseClass
+public class TC_003_LoginDDT extends BaseClass
 {
 	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = "Datadriven")	// Getting DataProvider from different class
 	public void verify_loginDDT(String email, String pwd, String exp) throws InterruptedException
@@ -30,7 +30,7 @@ public class TC003_LoginDDT extends BaseClass
 
 			// MyAccountPage
 			MyAccountPage myacc = new MyAccountPage(driver);
-			boolean targetPage = myacc.isMyAccountExists();
+			boolean targetPage = myacc.isMyAccountPageExists();
 
 			/*			Data is valid  -	login success - test pass  - logout
 								Data is valid -- login failed - test fail

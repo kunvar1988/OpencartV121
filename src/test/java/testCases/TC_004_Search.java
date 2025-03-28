@@ -1,6 +1,6 @@
 package testCases;
 
-public class TC0004_Search
+public class TC_004_Search
 {
 	// implement later
 }

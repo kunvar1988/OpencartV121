@@ -18,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -25,7 +26,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
-	public static WebDriver driver;
+	//public static WebDriver driver; 	//for capture screenshot make it static other wise remove static
+	public WebDriver driver;
 	public Logger logger; // For Log4j
 	public Properties myPropFile;
 
@@ -49,7 +51,7 @@ public class BaseClass {
 			// OS
 			if(os.equalsIgnoreCase("windows"))
 			{
-				capabilities.setPlatform(Platform.WIN11);
+				capabilities.setPlatform(Platform.WINDOWS);
 			}
 			else if(os.equalsIgnoreCase("linux"))
 			{
@@ -73,7 +75,7 @@ public class BaseClass {
 			break;
 			case "edge": capabilities.setBrowserName("MicrosoftEdge");				
 			break;
-			case "firefox": capabilities.setBrowserName("firefox");				
+			case "firefox":capabilities.setBrowserName("firefox");				
 			break;
 
 			default: System.out.println("No matching browser");
@@ -88,20 +90,16 @@ public class BaseClass {
 		{
 			switch (br.toLowerCase())
 			{
-			case "chrome":
-				driver = new ChromeDriver();
-				break;
-			case "edge":
-				driver = new EdgeDriver();
-				break;
+			case "chrome": driver = new ChromeDriver();
+			break;
+			case "edge": driver = new EdgeDriver();
+			break;
 
-			case "firefox":
-				driver = new FirefoxDriver();
-				break;
+			case "firefox": driver = new FirefoxDriver();
+			break;
 
-			default:
-				System.out.println("Invalid browser name..");
-				return;
+			default: System.out.println("Invalid browser name..");
+			return;
 			}
 		}
 
@@ -109,7 +107,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get(myPropFile.getProperty("appURL"));	// Reading URL from the config.properties file
-		// driver.get("https://tutorialsninja.com/demo/");		// harde coded URL
+		// driver.get("https://tutorialsninja.com/demo/");		// hard coded URL
 		driver.manage().window().maximize();
 	}
 
@@ -141,9 +139,9 @@ public class BaseClass {
 		return (generatedString + "@" + generatedNumber);
 	}
 
-	public String captureScreen(String tname)
+	public String captureScreen(String tname) throws IOException
 	{
-		String timeStamp= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";

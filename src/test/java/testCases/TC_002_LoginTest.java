@@ -7,7 +7,7 @@ import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
 import testBase.BaseClass;
 
-public class TC002_LoginTest extends BaseClass
+public class TC_002_LoginTest extends BaseClass
 {
 	@Test(groups = {"Sanity", "Master"})
 	public void verify_login()
@@ -29,7 +29,7 @@ public class TC002_LoginTest extends BaseClass
 
 			// MyAccountPage
 			MyAccountPage myacc = new MyAccountPage(driver);
-			boolean targetPage = myacc.isMyAccountExists();
+			boolean targetPage = myacc.isMyAccountPageExists();
 
 			//	Assert.assertEquals(targetPage, true, "Login failed");
 			Assert.assertTrue(targetPage);
